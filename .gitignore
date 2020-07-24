@@ -1,0 +1,12 @@
+node_modules/
+public/dist/
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map
+.env.test
+.env.development
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
