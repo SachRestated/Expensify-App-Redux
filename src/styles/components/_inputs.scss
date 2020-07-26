@@ -6,6 +6,10 @@
   padding: $s-size;
 }
 
+.text-desc {
+  margin-top: 0;
+}
+
 .select {
   @extend .text-input;
 }
