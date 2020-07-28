@@ -8,6 +8,7 @@ export const LoginPage = ({ startLogin }) => (
       <h1 className="box-layout__title">Expenses Manager App</h1>
       <p>Your Ultimate Expenses-Manager</p>
       <button className="button" onClick={startLogin}>Login with Google</button>
+      <p>For Chrome, ensure 3rd party cookies are enabled to login via google</p>
     </div>
   </div>
 );
