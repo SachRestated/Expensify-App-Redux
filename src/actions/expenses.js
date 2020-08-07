@@ -1,11 +1,17 @@
 import uuid from 'uuid';
-import database from '../firebase/firebase';
+import database from '../firebase/firebase';                   
 
 // ADD_EXPENSE
 export const addExpense = (expense) => ({
   type: 'ADD_EXPENSE',
   expense
 });
+
+// Start add expense is an action creator, but instead of returning an action object, it returns a thunk function
+// A thunk function is one that wraps an expression to delay its evaluation
+// Thus, a thunk function is used for implementing async logic with redux
+// Redux thunk middleware allows us to extend flexibility of redux of dealing with thunk function instead of just 
+// action objects
 
 export const startAddExpense = (expenseData = {}) => {
   return (dispatch, getState) => {
